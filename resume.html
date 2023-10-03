@@ -8,20 +8,62 @@
     <title>Ryan's Website</title>
 </head>
 <body>
-    <header id="navbar">
-        <h1 id="name">Ryan Vo</h1>
-        <nav id="navbar-links"> 
-            <a class="home" href="/index.html">Home</a>
-            <a class="blog" href="/blog.html">Blog</a>
-            <a class="portfolio" href="/portfolio.html">Portfolio</a>
-            <a class="resume" href="/resume.html">Resume</a>
-            <a class="contact" href="/contact.html">Contact</a>
+    <header>
+        <a href="/index.html"><h1 id="name">Ryan Vo</h1></a>
+        <nav>
+            <ul class="nav_links">
+                <li><a class="home" href="/index.html">Home</a></li>
+                <li><a class="blog" href="/blog.html">Blog</a></li>
+                <li><a class="portfolio" href="/portfolio.html">Portfolio</a></li>
+                <li><a class="resume" href="/resume.html">Resume</a></li>
+                <li><a class="contact" href="/contact.html">Contact</a></li>
+            </ul> 
         </nav>
     </header>
     <main>
-        <h1 class="resume">Resume</h1>
-        <iframe id="resume" src="Ryan_Vo_Resume.pdf" frameborder="0" width="1100px" height="1000px"></iframe>
-        <p>If unable to display PDF file: <a id="resume-download" href="Ryan_Vo_Resume.pdf">Download</a> instead.</p>
+        <h1>Resume</h1>
+        <div class="resume">
+            <div id="resume-embed">
+                <iframe id="resume" src="Ryan_Vo_Resume.pdf" frameborder="0" width="1100px" height="1000px"></iframe>
+                <p>If unable to display PDF file: <a id="resume-download" href="Ryan_Vo_Resume.pdf">Download</a> instead.</p>
+            </div>
+            <div id="resume-section">
+                <section>
+                    <h1>Education</h1>
+                    <h3>California Polytechnic State University, San Luis Obispo (Cal Poly)</h3>
+                    <h4>Bachelor of Science Degree in Computer Science | Expected Graduation Date: June 2026</h4>
+                </section>
+                <section>
+                    <h1>Coursework</h1>
+                    <ul>
+                        <li>Data Structures</li>
+                        <li>Object-Oriented Programming</li>
+                        <li>Fundamentals of Computer Science</li>
+                        <li>Linear Algebra</li>
+                        <li>Calculus I, II, and III</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Skills</h1>
+                    <ul>
+                        <li>Python</li>
+                        <li>HTML</li>   
+                        <li>CSS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Projects</h1>
+                    <h3>Personal website</h3>
+                    <ul>
+                        <li>Portfolio website made with HTML and CSS</li>
+                    </ul>
+                </section>
+                <section>
+                    <h1>Experience</h1>
+                    <h3>Hack4Impact</h3>
+                    <li>Completed the Hack4Impact starter pack</li>
+                </section>
+            </div>
         </div>
     </main>
     <footer class="footer">

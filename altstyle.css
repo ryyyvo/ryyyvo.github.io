@@ -1,29 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-html, body {
-    min-height: 100vh;
-    display: flex;
+* {
+    box-sizing: border-box;
     margin: 0;
-    flex-direction: column;
+    padding: 0;
+}
+
+html, body {
+    
     background-image: url("purple_clouds.jpg");
     background-size: cover;
     opacity: 0.95;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-#navbar { 
-    display:flex;
-    flex-wrap: wrap;
-    align-content: center;
+body { 
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+li, a, button {
+    text-decoration: none;
+}
+
+header { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     width: 100%;
     height: 5rem;
     font-size: 24px;
     background-color: rgb(240, 240, 240);
-    margin-bottom: 1rem;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
     opacity: 0.80;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #a67bb3;
 }
 
 #name {
@@ -31,23 +60,15 @@ html, body {
 }
 
 
-
-#navbar-links {
-    display: flex;
-    flex:1;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
 main {
-    margin-top: auto;
+    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    flex: auto;
     color: aliceblue;
-
 }
 
 .contact {
@@ -85,12 +106,30 @@ main {
     font-size: 1.2rem;
 }
 
+.resume {
+    flex: none;
+    display: flex;
+    justify-content: space-evenly;
+    /* width: 1000px; */
+}
+
+#resume-imbed {
+    /* width:50%; */
+    align-self: center;
+}
+
+#resume-section {
+    /* width: 50%; */
+    /* justify-content: center; */
+}
+
 #resume-download { 
     color: rgb(90, 90, 200);
 }
 
 footer {
     display: flex;
+    flex: none;
     flex-wrap: wrap;
     justify-content: space-around;
     bottom: 0;
