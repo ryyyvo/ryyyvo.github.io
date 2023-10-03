@@ -100,9 +100,11 @@ a:hover {
 
 img {
     border-radius: 50%;
+    transition: 750ms;
 }
 
 img:hover,
 img:focus {
     width: 350px;
+    
 }
