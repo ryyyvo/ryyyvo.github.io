@@ -38,6 +38,10 @@ header {
     opacity: 0.80;
 }
 
+header nav {
+    margin-right: 1rem;
+}
+
 ul {
     list-style: none;
 }
@@ -47,10 +51,14 @@ ul {
     padding: 0px 20px;
 }
 
+.project-details a,
+#name,
 li a {
     transition: all 0.3s ease 0s;
 }
 
+.project-details a:hover,
+#name:hover,
 li a:hover {
     color: #a67bb3;
 }
@@ -129,17 +137,28 @@ main {
     flex: none;
     display: flex;
     justify-content: space-evenly;
-    /* width: 1000px; */
+    width: 100%;
 }
 
-#resume-imbed {
-    /* width:50%; */
-    align-self: center;
+#resume-embed p{
+    margin-top: 1rem
 }
 
 #resume-section {
-    /* width: 50%; */
-    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+}
+
+#resume-section section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#resume-section section ul{
+    list-style:circle;
 }
 
 #resume-download { 
@@ -148,9 +167,9 @@ main {
 
 footer {
     display: flex;
-    flex: none;
+    justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    justify-content: space-around;
     bottom: 0;
     margin-top: auto;
     opacity: 0.9;
@@ -165,13 +184,13 @@ footer div{
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
     flex: 1 1 auto;
-    margin-bottom: 2rem;
-    gap: 15px
 }
 
-
+footer div ul{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
 
 a {
     color:inherit;
