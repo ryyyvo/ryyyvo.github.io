@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
-
 html, body {
     min-height: 100vh;
     display: flex;
@@ -31,6 +30,8 @@ html, body {
     margin-left: 2rem;
 }
 
+
+
 #navbar-links {
     display: flex;
     flex:1;
@@ -40,29 +41,61 @@ html, body {
     gap: 5rem;
 }
 
+main {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact form{
+    display: flex;
+    align-items:baseline;
+    flex-direction: column;
+}
+
+.contact #send-message{
+  background-color:#a67bb3;
+  border-radius: 8px;
+  border-style: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
+  height: 40px;
+  padding: 10px 16px;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.contact #send-message:hover,
+.contact #send-message:focus {
+  background-color: #cea2da;
+}
+
+.personal-website {
+    font-size: 1.2rem;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    bottom: 0;
+    margin-top: auto;
+    opacity: 0.9;
     background-color: rgb(240, 240, 240);
     font-size: 20px;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    margin-top: auto;
     box-shadow: 2px 4px 16px rgba(0,0,0,.06);
     border-radius: 4px;
-}
-
-footer div{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    flex: 1 1 auto;
-    margin-bottom: 2rem;
-    gap: 15px
 }
 
 a {
@@ -76,26 +109,6 @@ a:visited {
 
 a:hover {
     text-decoration:underline;
-}
-
-.about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 5rem;
-}
-
-.about-text p {
-    text-align: center;
-    font-size: 2.5rem;
-    color: aliceblue;
-    margin-top: 2rem;
-    width: 45rem;
-}
-
-.about-image {
-    margin-top: 4rem;
 }
 
 img {

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="altstyle.css">
     <title>Ryan's Website</title>
 </head>
 <body>
@@ -19,13 +19,15 @@
         </nav>
     </header>
     <main>
-        <h1 class="contact">Contact</h1>
-        <form id="contact-form">
-            Name: <input type="text" id="name">
-            Email: <input type="email" id="email">
-            Message: <textarea></textarea>
-            <input type="submit">
-        </form>
+        <div class="contact">
+            <h1>Contact me!</h1>
+            <form id="contact-form">
+                <h2>Name:</h2><input type="text" id="name">
+                <h2>Email:</h2><input type="email" id="email">
+                <h2>Message:</h2><textarea></textarea>
+                <input id="send-message" type="submit" value="Send message">
+            </form>
+        </div>
     </main>
     <footer class="footer">
         © 2023 Ryan Vo | All Rights Reserved
