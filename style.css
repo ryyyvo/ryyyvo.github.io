@@ -8,7 +8,7 @@ html, body {
     flex-direction: column;
     background-image: url("purple_clouds.jpg");
     background-size: cover;
-    opacity: 0.90;
+    opacity: 0.95;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
@@ -46,7 +46,6 @@ footer {
     justify-content: space-around;
     background-color: rgb(240, 240, 240);
     font-size: 20px;
-    position: fixed;
     bottom: 0;
     width: 100%;
     height: auto;
@@ -81,20 +80,20 @@ a:hover {
 
 .about {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: auto;
     justify-content: center;
-    
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
 }
 
 .about-text p {
+    text-align: center;
     font-size: 2.5rem;
     color: aliceblue;
-    margin-top: 7rem;
-    margin-right: 40rem;
-    margin-left: 40rem;
+    margin-top: 2rem;
+    width: 45rem;
 }
 
 .about-image {
-    margin-top: 5rem;
+    margin-top: 4rem;
 }
