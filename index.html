@@ -4,38 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ryan's Website</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Ryan Vo's Portfolio</title>
 </head>
-<body>
-    <nav class="navbar">
-        <h1 class="logo">
-            <a href="index.html">personal website</a>
-        </h1>
-        <ul class="nav-list">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <main>
-        <h1 class="index"></h1>
-        <div class="about">
-            <div class="about-image"></div>
-            <div class="about-text">
-                <p>
-                    Hi, I'm <strong>Ryan Vo</strong> (he/him), and I am a second-year Computer Science 
-                    major from San Diego, CA. I can clap one-handed, which will be useful 
-                    if I ever lose one of my hands. I enjoy playing video games, going to 
-                    the gym, and window shopping.
-                </p>
+    <body>
+        <header id="navbar">
+            <h1 id="name">Ryan Vo</h1>
+            <nav id="navbar-links"> 
+                <a class="home" href="/index.html">Home</a>
+                <a class="blog" href="/blog.html">Blog</a>
+                <a class="portfolio" href="/portfolio.html">Portfolio</a>
+                <a class="resume" href="/resume.html">Resume</a>
+                <a class="contact" href="/contact.html">Contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="about">
+                <div class="about-image">
+                    <img src="/me.jpg" width="300px">
+                </div>
+                <div class="about-text">
+                    <p>
+                        Hi, I'm <strong>Ryan Vo</strong>! I am a second-year Computer Science 
+                        major from San Diego, CA. I can clap one-handed, which will be useful 
+                        if I ever lose one of my hands. I enjoy playing video games, going to 
+                        the gym, and window shopping.
+                    </p>
+                </div>
             </div>
-        </div>
-
-    </main>
-    <footer class="footer">
-        © 2023 Ryan Vo | All Rights Reserved
-    </footer>
-</body>
+        </main>
+        <footer>
+            <div class="quicklinks">
+                <h2>Quick Links</h2>
+                <a class="home" href="/index.html">Home</a>
+                <a class="portfolio" href="/portfolio.html">Portfolio</a>
+                <a class="resume" href="/resume.html">Resume</a>
+            </div>
+            <div class="other">
+                <h2>Other</h2>
+                <a class="linkedin" href="https://www.linkedin.com/in/ryanlevo/">LinkedIn</a>
+                <a class="github" href="https://github.com/ryyyvo">GitHub</a>
+            </div>
+            <div class="contactinfo">
+                <h2>Contact Information</h2>
+                <p>ryanlevo123@gmail.com</p>
+                <p>© 2023 Ryan Vo | All Rights Reserved</p>
+            </div>
+        </footer>
+    </body>
 </html>
